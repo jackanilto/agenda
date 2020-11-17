@@ -4,9 +4,10 @@ const route = express.Router();
 const homeController = require('./src/controllers/homeController');
 const loginController = require('./src/controllers/loginController');
 
-// Rotas da inicio
+// Rotas da Home Page
 route.get('/', homeController.index);
 
 // rotas de Login
 route.get('/login/index', loginController.index);
+route.get('/login/regsiter', loginController.index);
 module.exports = route;
